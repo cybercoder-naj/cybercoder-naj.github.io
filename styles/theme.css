@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+
+body {
+    font-family: 'Sen', sans-serif;
+}
+
+.bg-dark {
+    background-color: black!important;
+}
+
+.bg-peach {
+    background-color: hsla(32, 100%, 95%, 1)!important;
+}
+
+.text-muted {
+    color: hsla(212, 13%, 57%, 1)!important;
+}
+
+.text-green {
+    color: hsl(128, 55%, 51%)!important;
+}
+
+.text-blue {
+    color: hsl(218, 100%, 69%)!important;
+}
+
+.text-pink {
+    color: hsl(338, 76%, 64%)!important;
+}
+
+.text-black {
+    color: black!important;
+}
+
+.form-control,
+.form-control:focus,
+textarea {
+    background-color: hsl(240, 19%, 12%);
+    border: none;
+    outline: none;
+    color: white;
+    padding: .375rem .75rem;
+}
+
+.form-control:focus,
+textarea:focus {
+    box-shadow: 0 0 0 .2rem hsl(255, 80%, 52%);
+}
+
+.btn-primary {
+    background-color: hsl(255, 80%, 52%);
+    border: none;
+}
+
+.btn-primary:active,
+.btn-primary:hover {
+    background-color: hsl(255, 80%, 40%)!important;
+}
+
+.btn-primary:focus,
+.btn-primary:active:focus {
+    box-shadow: none;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: black;
+}
+
+.navbar-toggler:is(:focus, :active) {
+    outline: none;
+    box-shadow: none;
+}

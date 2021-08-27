@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2em;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  counter-reset: work-card;
+}
+
+nav {
+  transition: background-color 150ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  nav.navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav .navbar-brand {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+  }
+}
+nav .navbar-brand .long-brand {
+  font-size: 1rem;
+}
+@media screen and (min-width: 576px) {
+  nav .navbar-brand .long-brand {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav .navbar-brand .long-brand {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  nav .navbar-brand .long-brand {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav .navbar-nav li {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav .navbar-nav li#li-contact {
+    background-color: #5423e7;
+    transition: background-color 150ms ease-in-out;
+  }
+  nav .navbar-nav li#li-contact:hover {
+    background-color: #3d14b8;
+  }
+  nav .navbar-nav li#li-contact a.nav-link {
+    color: white !important;
+  }
+}
+
+.nav-btn {
+  width: 24px;
+  height: 24px;
+  float: right;
+}
+.nav-btn .bar, .nav-btn .bar2, .nav-btn .bar1 {
+  background-color: #8390a0;
+  width: 100%;
+  height: 3px;
+  position: relative;
+  transition: all 300ms ease-in-out;
+}
+.nav-btn .bar1 {
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.nav-btn .bar2 {
+  width: 70%;
+  margin-left: 30%;
+}
+
+.navbar-toggler:not(.collapsed) .bar1 {
+  transform: translate(0, 5px) rotate(45deg);
+}
+.navbar-toggler:not(.collapsed) .bar2 {
+  width: 100%;
+  margin-left: 0;
+  transform: translate(0, -1px) rotate(-45deg);
+}
+
+#header {
+  padding-top: 7vh;
+}
+#header img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #header img {
+    -webkit-animation: slide-right 1.2s ease-in-out;
+    animation: slide-right 1.2s ease-in-out;
+  }
+}
+@media screen and (min-width: 768px) {
+  #header #main-text {
+    -webkit-animation: slide-left 1.2s ease-in-out;
+    animation: slide-left 1.2s ease-in-out;
+  }
+}
+@media screen and (min-width: 768px) {
+  #header .container-fluid {
+    max-width: 500px;
+  }
+}
+#header h1,
+#header p {
+  background: #191924;
+}
+@media screen and (min-width: 768px) {
+  #header::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: 0;
+    height: 51vw;
+    background-color: #191924;
+    z-index: -10;
+    min-height: 520px;
+  }
+}
+
+@-webkit-keyframes slide-right {
+  from {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-left {
+  from {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+#experience,
+#skills,
+#projects,
+#testimonials,
+#contact {
+  margin-top: 5vh !important;
+  margin-bottom: 5vh !important;
+}
+@media screen and (min-width: 576px) {
+  #experience,
+#skills,
+#projects,
+#testimonials,
+#contact {
+    margin-top: 8vh !important;
+    margin-bottom: 8vh !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  #experience,
+#skills,
+#projects,
+#testimonials,
+#contact {
+    margin-top: 16vh !important;
+    margin-bottom: 16vh !important;
+  }
+}
+
+.work-card::before {
+  counter-increment: work-card;
+  content: "0" counter(work-card);
+  color: #8390a0;
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+#projects .project-card {
+  background-color: #191924;
+}
+#projects .project-card img {
+  width: 100%;
+}
+
+#skills img[src$=".svg"] {
+  width: 32px;
+  height: 32px;
+}
+
+textarea {
+  width: 100%;
+}
+
+button[type=submit] {
+  width: 100%;
+  border-radius: 0;
+}
+
+.ic-github {
+  color: white;
+}
+.ic-github:hover {
+  color: #bfbfbf;
+}
+.ic-linkedin {
+  color: #0e78aa;
+}
+.ic-linkedin:hover {
+  color: #0a577b;
+}
+.ic-telegram {
+  color: #0088cc;
+}
+.ic-telegram:hover {
+  color: #006699;
+}
+
+footer {
+  background: #191924;
+}
+
+td > a {
+  color: #8390a0;
+}
+td > a:hover {
+  color: #b7bfc8;
+  text-decoration: none;
+}
+
+.glow {
+  font-size: 1em;
+  border-radius: 12px;
+  padding: 1em;
+  box-shadow: 0 0 15px 2px #5423e7, inset 0 0 10px 2px #5423e7;
+  -webkit-animation: glow 2s infinite ease-in-out;
+  animation: glow 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    box-shadow: 0 0 15px 2px #5423e7, inset 0 0 10px 2px #5423e7;
+  }
+  50% {
+    box-shadow: 0 0 15px 5px #5423e7, inset 0 0 10px 2px #5423e7;
+  }
+  100% {
+    box-shadow: 0 0 15px 2px #5423e7, inset 0 0 10px 2px #5423e7;
+  }
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 15px 2px #5423e7, inset 0 0 10px 2px #5423e7;
+  }
+  50% {
+    box-shadow: 0 0 15px 5px #5423e7, inset 0 0 10px 2px #5423e7;
+  }
+  100% {
+    box-shadow: 0 0 15px 2px #5423e7, inset 0 0 10px 2px #5423e7;
+  }
+}
+.testimonial-card {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-card span {
+  position: absolute;
+  height: 2px;
+  width: 2px;
+}
+.testimonial-card span:nth-of-type(1) {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(to right, transparent, white);
+  transform: translateX(-100%);
+  -webkit-animation: left-to-right 2s linear infinite;
+  animation: left-to-right 2s linear infinite;
+}
+.testimonial-card span:nth-of-type(2) {
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(to bottom, transparent, white);
+  transform: translateY(-100%);
+  -webkit-animation: top-to-bottom 2s linear infinite 1s;
+  animation: top-to-bottom 2s linear infinite 1s;
+}
+.testimonial-card span:nth-of-type(3) {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(to left, transparent, white);
+  transform: translateX(100%);
+  -webkit-animation: right-to-left 2s linear infinite;
+  animation: right-to-left 2s linear infinite;
+}
+.testimonial-card span:nth-of-type(4) {
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(to top, transparent, white);
+  transform: translateY(100%);
+  -webkit-animation: bottom-to-top 2s linear infinite 1s;
+  animation: bottom-to-top 2s linear infinite 1s;
+}
+
+@-webkit-keyframes left-to-right {
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes left-to-right {
+  to {
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes top-to-bottom {
+  to {
+    transform: translateY(100%);
+  }
+}
+@keyframes top-to-bottom {
+  to {
+    transform: translateY(100%);
+  }
+}
+@-webkit-keyframes right-to-left {
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes right-to-left {
+  to {
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes bottom-to-top {
+  to {
+    transform: translateY(-100%);
+  }
+}
+@keyframes bottom-to-top {
+  to {
+    transform: translateY(-100%);
+  }
+}
+#btnProjects {
+  display: grid;
+  place-items: center;
+}
+#btnProjects a {
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+#btnProjects a:hover {
+  color: white;
+  text-decoration: none;
+}
+#btnProjects a:hover::before {
+  transform: translateX(100%);
+}
+#btnProjects a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+  background-color: rgba(84, 35, 231, 0.3);
+  transform: translateX(-100%);
+  z-index: -10;
+  transition: transform 500ms ease-in-out;
+}
+
+#top-button {
+  right: 4em;
+  bottom: 4em;
+  background: #2354e7;
+  width: 3.5em;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  height: 3.5em;
+  z-index: -1030;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+#top-button a {
+  all: unset;
+  cursor: pointer;
+}
+#top-button .tooltip {
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
