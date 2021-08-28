@@ -247,6 +247,20 @@ nav .navbar-brand .long-brand {
 #projects .project-card img {
   width: 100%;
 }
+#projects .project-card button {
+  all: unset;
+  color: #5423e7;
+  font-weight: 700;
+  border-radius: 15px;
+  transition: box-shadow 10ms ease-in-out;
+}
+#projects .project-card button:hover {
+  box-shadow: 12px 12px 16px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.05);
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.25));
+}
+#projects .project-card button:active {
+  background: linear-gradient(to top left, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.25));
+}
 
 #skills img[src$=".svg"] {
   width: 32px;

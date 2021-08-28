@@ -39,4 +39,8 @@ $(function () {
         window.location.replace(`mailto:cybercoder.nishant@gmail.com?subject=${subject}&body=${body}`)
         e.currentTarget.submit();
     });
+
+    $('.project-card button').click(function() {
+        window.location.href = $(this).data('url');
+    })
 });
