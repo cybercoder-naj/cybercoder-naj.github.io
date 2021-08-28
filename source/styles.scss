@@ -31,6 +31,7 @@ html {
 html,
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -156,6 +157,26 @@ nav {
       -webkit-animation: slide-left 1.2s ease-in-out;
       animation: slide-left 1.2s ease-in-out;
     }
+
+    h1 {
+      @include md-devices {
+        font-size: 2rem;
+      }
+
+      @include lg-devices {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      @include md-devices {
+        font-size: 0.8rem;
+      }
+
+      @include lg-devices {
+        font-size: 1rem;
+      }
+    }
   }
 
   .container-fluid {
@@ -176,10 +197,10 @@ nav {
       width: 60%;
       right: 0;
       top: 0;
-      height: 51vw;
+      height: 57vw;
       background-color: hsl(240, 18%, 12%);
       z-index: -10;
-      min-height: 520px;
+      min-height: 480px;
     }
   }
 }
@@ -506,8 +527,8 @@ td > a {
 }
 
 #top-button {
-  right: 4em;
-  bottom: 4em;
+  right: 2em;
+  bottom: 2em;
   background: hsl(225, 80%, 52%);
   width: 3.5em;
   border-radius: 50%;
