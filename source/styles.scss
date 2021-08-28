@@ -539,6 +539,16 @@ td > a {
   opacity: 0;
   transition: opacity 300ms ease-in-out;
 
+  @include sm-devices {
+    right: 3em;
+    bottom: 3em;
+  }
+
+  @include md-devices {
+    right: 4em;
+    bottom: 4em;
+  }
+
   a {
     all: unset;
     cursor: pointer;

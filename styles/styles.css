@@ -458,6 +458,18 @@ td > a:hover {
   opacity: 0;
   transition: opacity 300ms ease-in-out;
 }
+@media screen and (min-width: 576px) {
+  #top-button {
+    right: 3em;
+    bottom: 3em;
+  }
+}
+@media screen and (min-width: 768px) {
+  #top-button {
+    right: 4em;
+    bottom: 4em;
+  }
+}
 #top-button a {
   all: unset;
   cursor: pointer;
