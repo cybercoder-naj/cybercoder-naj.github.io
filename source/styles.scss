@@ -316,6 +316,141 @@ nav {
   }
 }
 
+#tutoring {
+  background-color: lighten(#ff9892, 10%);
+
+  img {
+    width: 80%;
+  }
+
+  a {
+    overflow: hidden;
+    padding: .5em;
+    transition: color 200ms ease-in-out;
+    bottom: 2px;
+
+    span.link-text {
+      white-space: nowrap;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      span:not(.link-text) {
+        background-color: white;
+
+        &.line-1 {
+          transform: translateX(-120%);
+        }
+
+        &.line-2 {
+          transform: translateY(-20%);
+        }
+
+        &.line-3 {
+          transform: translateY(100%);
+        }
+        
+        &.line-4 {
+          transform: translateX(-10%);
+        }
+
+        &.line-5 {
+          transform: translateX(100%);
+        }
+
+        &.line-6 {
+          transform: translateY(-20%);
+        }
+
+        &.line-7 {
+          transform: translateY(-140%);
+        }
+
+        &.line-8 {
+          transform: translateX(-5%);
+        }
+      }
+    }
+
+    span:not(.link-text) {
+      background-color: black;
+
+      &.line-1 {
+        height: 2px;
+        width: 120%;
+        top: 0;
+        transform: translateX(-50%);
+        transition: transform 300ms ease-out,
+          background-color 300ms ease-in-out;
+      }
+
+      &.line-2 {
+        height: 120%;
+        width: 2px;
+        left: 0;
+        transform: translateY(-70%);
+        transition: transform 300ms ease-in 10ms,
+        background-color 300ms ease-in-out;
+      }
+
+      &.line-3 {
+        height: 100%;
+        width: 2px;
+        left: 0;
+        transform: translateY(50%);
+        transition: transform 300ms ease-out,
+        background-color 300ms ease-in-out;
+      }
+      
+      &.line-4 {
+        height: 2px;
+        width: 120%;
+        bottom: 0;
+        transform: translateX(-80%);
+        transition: transform 300ms ease-in 10ms,
+        background-color 300ms ease-in-out;
+      }
+      
+      &.line-5 {
+        height: 2px;
+        width: 120%;
+        bottom: 0;
+        transform: translateX(30%);
+        transition: transform 300ms ease-out,
+        background-color 300ms ease-in-out;
+      }
+
+      &.line-6 {
+        height: 120%;
+        width: 2px;
+        right: 0;
+        transform: translateY(50%);
+        transition: transform 300ms ease-out,
+        background-color 300ms ease-in-out;
+      }
+
+      &.line-7 {
+        height: 120%;
+        width: 2px;
+        right: 0;
+        transform: translateY(-70%);
+        transition: transform 300ms ease-in 10ms,
+        background-color 300ms ease-in-out;
+      }
+
+      &.line-8 {
+        width: 120%;
+        height: 2px;
+        top: 0;
+        transform: translateX(65%);
+        transition: transform 300ms ease-in 10ms,
+        background-color 300ms ease-in-out;
+      }
+    }
+  }
+}
+
 textarea {
   width: 100%;
 }

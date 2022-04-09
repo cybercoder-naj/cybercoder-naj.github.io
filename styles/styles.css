@@ -267,6 +267,111 @@ nav .navbar-brand .long-brand {
   height: 32px;
 }
 
+#tutoring {
+  background-color: #ffc8c5;
+}
+#tutoring img {
+  width: 80%;
+}
+#tutoring a {
+  overflow: hidden;
+  padding: 0.5em;
+  transition: color 200ms ease-in-out;
+  bottom: 2px;
+}
+#tutoring a span.link-text {
+  white-space: nowrap;
+}
+#tutoring a:hover {
+  text-decoration: none;
+}
+#tutoring a:hover span:not(.link-text) {
+  background-color: white;
+}
+#tutoring a:hover span:not(.link-text).line-1 {
+  transform: translateX(-120%);
+}
+#tutoring a:hover span:not(.link-text).line-2 {
+  transform: translateY(-20%);
+}
+#tutoring a:hover span:not(.link-text).line-3 {
+  transform: translateY(100%);
+}
+#tutoring a:hover span:not(.link-text).line-4 {
+  transform: translateX(-10%);
+}
+#tutoring a:hover span:not(.link-text).line-5 {
+  transform: translateX(100%);
+}
+#tutoring a:hover span:not(.link-text).line-6 {
+  transform: translateY(-20%);
+}
+#tutoring a:hover span:not(.link-text).line-7 {
+  transform: translateY(-140%);
+}
+#tutoring a:hover span:not(.link-text).line-8 {
+  transform: translateX(-5%);
+}
+#tutoring a span:not(.link-text) {
+  background-color: black;
+}
+#tutoring a span:not(.link-text).line-1 {
+  height: 2px;
+  width: 120%;
+  top: 0;
+  transform: translateX(-50%);
+  transition: transform 300ms ease-out, background-color 300ms ease-in-out;
+}
+#tutoring a span:not(.link-text).line-2 {
+  height: 120%;
+  width: 2px;
+  left: 0;
+  transform: translateY(-70%);
+  transition: transform 300ms ease-in 10ms, background-color 300ms ease-in-out;
+}
+#tutoring a span:not(.link-text).line-3 {
+  height: 100%;
+  width: 2px;
+  left: 0;
+  transform: translateY(50%);
+  transition: transform 300ms ease-out, background-color 300ms ease-in-out;
+}
+#tutoring a span:not(.link-text).line-4 {
+  height: 2px;
+  width: 120%;
+  bottom: 0;
+  transform: translateX(-80%);
+  transition: transform 300ms ease-in 10ms, background-color 300ms ease-in-out;
+}
+#tutoring a span:not(.link-text).line-5 {
+  height: 2px;
+  width: 120%;
+  bottom: 0;
+  transform: translateX(30%);
+  transition: transform 300ms ease-out, background-color 300ms ease-in-out;
+}
+#tutoring a span:not(.link-text).line-6 {
+  height: 120%;
+  width: 2px;
+  right: 0;
+  transform: translateY(50%);
+  transition: transform 300ms ease-out, background-color 300ms ease-in-out;
+}
+#tutoring a span:not(.link-text).line-7 {
+  height: 120%;
+  width: 2px;
+  right: 0;
+  transform: translateY(-70%);
+  transition: transform 300ms ease-in 10ms, background-color 300ms ease-in-out;
+}
+#tutoring a span:not(.link-text).line-8 {
+  width: 120%;
+  height: 2px;
+  top: 0;
+  transform: translateX(65%);
+  transition: transform 300ms ease-in 10ms, background-color 300ms ease-in-out;
+}
+
 textarea {
   width: 100%;
 }
