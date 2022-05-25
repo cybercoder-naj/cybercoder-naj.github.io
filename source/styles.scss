@@ -251,6 +251,8 @@ nav {
 
 #experience,
 #skills,
+#articles,
+#tutoring,
 #projects,
 #testimonials,
 #contact {
@@ -281,6 +283,36 @@ nav {
   font-size: 5.5rem;
   font-weight: 300;
   line-height: 1.2;
+}
+
+#articles .article-card {
+  background-color: hsl(240, 19%, 12%);
+
+  img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+  }
+
+  a {
+    all: unset;
+    color: hsl(255, 80%, 52%);
+    font-weight: 700;
+    border-radius: 15px;
+    transition: box-shadow 10ms ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+      box-shadow: 12px 12px 16px hsla(0, 0%, 0%, .3),
+        -6px -6px 12px hsla(0, 0%, 100%, .05);
+      background: linear-gradient(to bottom right, hsla(0, 0%, 100%, .02), hsla(0, 0%, 0%, .25));
+    }
+
+    &:active {
+      background: linear-gradient(to top left, hsla(0, 0%, 100%, .05), hsla(0, 0%, 0%, .25));
+    }
+  }
 }
 
 #projects .project-card {

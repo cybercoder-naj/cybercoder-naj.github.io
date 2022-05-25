@@ -205,6 +205,8 @@ nav .navbar-brand .long-brand {
 }
 #experience,
 #skills,
+#articles,
+#tutoring,
 #projects,
 #testimonials,
 #contact {
@@ -214,6 +216,8 @@ nav .navbar-brand .long-brand {
 @media screen and (min-width: 576px) {
   #experience,
 #skills,
+#articles,
+#tutoring,
 #projects,
 #testimonials,
 #contact {
@@ -224,6 +228,8 @@ nav .navbar-brand .long-brand {
 @media screen and (min-width: 768px) {
   #experience,
 #skills,
+#articles,
+#tutoring,
 #projects,
 #testimonials,
 #contact {
@@ -239,6 +245,31 @@ nav .navbar-brand .long-brand {
   font-size: 5.5rem;
   font-weight: 300;
   line-height: 1.2;
+}
+
+#articles .article-card {
+  background-color: #191924;
+}
+#articles .article-card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+}
+#articles .article-card a {
+  all: unset;
+  color: #5423e7;
+  font-weight: 700;
+  border-radius: 15px;
+  transition: box-shadow 10ms ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+}
+#articles .article-card a:hover {
+  box-shadow: 12px 12px 16px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.05);
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.25));
+}
+#articles .article-card a:active {
+  background: linear-gradient(to top left, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.25));
 }
 
 #projects .project-card {
@@ -597,4 +628,4 @@ td > a:hover {
   color: white;
 }
 
-/*# sourceMappingURL=styles.css.map trigger gh-build*/
+/*# sourceMappingURL=styles.css.map */
