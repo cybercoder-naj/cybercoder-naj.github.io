@@ -61,7 +61,8 @@ $(function () {
 
             $('<a>')
                 .addClass('m-3 py-2 px-3')
-                .attr('data-url', data.items[i].link)
+                .attr('href', data.items[i].link)
+                .attr('target', '_blank')
                 .html('View Article')
                 .appendTo(article)
         })
