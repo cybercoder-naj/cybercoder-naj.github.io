@@ -45,6 +45,19 @@ $(function () {
     })
 
     async function loadMediumArticles() {
+        const transformCategories = (categories) => {
+            const newCategories = []
+            const capitaliseWords = (str) => {
+                return str.replace(/(?:^|\s)\S/g, a => a.toUpperCase())
+            }
+
+            categories.forEach(category => {
+                const newCategory = capitaliseWords(category.replaceAll("-", " "))
+                newCategories.push(newCategory)
+            })
+            return newCategories
+        }
+
         const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://www.medium.com/feed/@cybercoder.naj')
         const data = await response.json()
 
@@ -55,9 +68,20 @@ $(function () {
                 .appendTo(article)
 
             $('<h3>')
-                .addClass('font-weight-bold p-3')
+                .addClass('font-weight-bold px-3 pt-3')
                 .html(data.items[i].title)
                 .appendTo(article)
+
+            const p = $('<p>')
+                .addClass("px-3")
+                .appendTo(article)
+
+            transformCategories(data.items[i].categories).forEach(category => {
+                $('<span>')
+                    .addClass("px-2 py-1 mx-1 my-2 h4 badge rounded-pill bg-info")
+                    .html(category)
+                    .appendTo(p)
+            })
 
             $('<a>')
                 .addClass('m-3 py-2 px-3')
