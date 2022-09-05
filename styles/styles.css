@@ -478,6 +478,16 @@ td > a:hover {
   position: relative;
   overflow: hidden;
 }
+.testimonial-card#learnapp-testimonial {
+  position: static;
+  left: 0%;
+}
+@media screen and (min-width: 768px) {
+  .testimonial-card#learnapp-testimonial {
+    position: relative;
+    left: 50%;
+  }
+}
 .testimonial-card span {
   position: absolute;
   height: 2px;

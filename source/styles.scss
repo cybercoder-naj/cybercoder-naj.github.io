@@ -577,6 +577,16 @@ td > a {
   position: relative;
   overflow: hidden;
 
+  &#learnapp-testimonial {
+    position: static;
+    left: 0%;
+
+    @include md-devices {
+      position: relative;
+      left: 50%;
+    }
+  }
+
   span {
     position: absolute;
     height: 2px;
