@@ -61,11 +61,11 @@ nav .navbar-brand .long-brand {
 }
 @media screen and (min-width: 768px) {
   nav .navbar-nav li#li-contact {
-    background-color: #5423e7;
+    background-color: hsl(255, 80%, 52%);
     transition: background-color 150ms ease-in-out;
   }
   nav .navbar-nav li#li-contact:hover {
-    background-color: #3d14b8;
+    background-color: hsl(255, 80%, 40%);
   }
   nav .navbar-nav li#li-contact a.nav-link {
     color: white !important;
@@ -78,7 +78,7 @@ nav .navbar-brand .long-brand {
   float: right;
 }
 .nav-btn .bar, .nav-btn .bar2, .nav-btn .bar1 {
-  background-color: #8390a0;
+  background-color: hsl(212, 13%, 57%);
   width: 100%;
   height: 3px;
   position: relative;
@@ -147,7 +147,7 @@ nav .navbar-brand .long-brand {
 }
 #header h1,
 #header p {
-  background: #191924;
+  background: hsl(240, 19%, 12%);
 }
 @media screen and (min-width: 768px) {
   #header::after {
@@ -157,7 +157,7 @@ nav .navbar-brand .long-brand {
     right: 0;
     top: 0;
     height: 57vw;
-    background-color: #191924;
+    background-color: hsl(240, 18%, 12%);
     z-index: -10;
     min-height: 480px;
   }
@@ -215,24 +215,24 @@ nav .navbar-brand .long-brand {
 }
 @media screen and (min-width: 576px) {
   #experience,
-#skills,
-#articles,
-#tutoring,
-#projects,
-#testimonials,
-#contact {
+  #skills,
+  #articles,
+  #tutoring,
+  #projects,
+  #testimonials,
+  #contact {
     margin-top: 8vh !important;
     margin-bottom: 8vh !important;
   }
 }
 @media screen and (min-width: 768px) {
   #experience,
-#skills,
-#articles,
-#tutoring,
-#projects,
-#testimonials,
-#contact {
+  #skills,
+  #articles,
+  #tutoring,
+  #projects,
+  #testimonials,
+  #contact {
     margin-top: 16vh !important;
     margin-bottom: 16vh !important;
   }
@@ -241,14 +241,14 @@ nav .navbar-brand .long-brand {
 .work-card::before {
   counter-increment: work-card;
   content: "0" counter(work-card);
-  color: #8390a0;
+  color: hsl(213, 13%, 57%);
   font-size: 5.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 #articles .article-card {
-  background-color: #191924;
+  background-color: hsl(240, 19%, 12%);
 }
 #articles .article-card img {
   width: 100%;
@@ -257,7 +257,7 @@ nav .navbar-brand .long-brand {
 }
 #articles .article-card a {
   all: unset;
-  color: #5423e7;
+  color: hsl(255, 80%, 52%);
   font-weight: 700;
   border-radius: 15px;
   transition: box-shadow 10ms ease-in-out;
@@ -265,32 +265,32 @@ nav .navbar-brand .long-brand {
   display: inline-block;
 }
 #articles .article-card a:hover {
-  box-shadow: 12px 12px 16px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.05);
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.25));
+  box-shadow: 12px 12px 16px hsla(0, 0%, 0%, 0.3), -6px -6px 12px hsla(0, 0%, 100%, 0.05);
+  background: linear-gradient(to bottom right, hsla(0, 0%, 100%, 0.02), hsla(0, 0%, 0%, 0.25));
 }
 #articles .article-card a:active {
-  background: linear-gradient(to top left, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.25));
+  background: linear-gradient(to top left, hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 0%, 0.25));
 }
 
 #projects .project-card {
-  background-color: #191924;
+  background-color: hsl(240, 19%, 12%);
 }
 #projects .project-card img {
   width: 100%;
 }
 #projects .project-card button {
   all: unset;
-  color: #5423e7;
+  color: hsl(255, 80%, 52%);
   font-weight: 700;
   border-radius: 15px;
   transition: box-shadow 10ms ease-in-out;
 }
 #projects .project-card button:hover {
-  box-shadow: 12px 12px 16px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.05);
-  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.25));
+  box-shadow: 12px 12px 16px hsla(0, 0%, 0%, 0.3), -6px -6px 12px hsla(0, 0%, 100%, 0.05);
+  background: linear-gradient(to bottom right, hsla(0, 0%, 100%, 0.02), hsla(0, 0%, 0%, 0.25));
 }
 #projects .project-card button:active {
-  background: linear-gradient(to top left, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.25));
+  background: linear-gradient(to top left, hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 0%, 0.25));
 }
 
 #skills img[src$=".svg"] {
@@ -413,33 +413,33 @@ button[type=submit] {
 }
 
 .ic-github {
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 .ic-github:hover {
-  color: #bfbfbf;
+  color: hsl(0, 0%, 75%);
 }
 .ic-linkedin {
-  color: #0e78aa;
+  color: hsl(199, 85%, 36%);
 }
 .ic-linkedin:hover {
-  color: #0a577b;
+  color: hsl(199, 85%, 26%);
 }
 .ic-telegram {
-  color: #0088cc;
+  color: hsl(200, 100%, 40%);
 }
 .ic-telegram:hover {
-  color: #006699;
+  color: hsl(200, 100%, 30%);
 }
 
 footer {
-  background: #191924;
+  background: hsl(240, 19%, 12%);
 }
 
 td > a {
-  color: #8390a0;
+  color: hsl(212, 13%, 57%);
 }
 td > a:hover {
-  color: #b7bfc8;
+  color: hsl(212, 13%, 75%);
   text-decoration: none;
 }
 
@@ -447,31 +447,31 @@ td > a:hover {
   font-size: 1em;
   border-radius: 12px;
   padding: 1em;
-  box-shadow: 0 0 15px 2px #5423e7, inset 0 0 10px 2px #5423e7;
+  box-shadow: 0 0 15px 2px hsl(255, 80%, 52%), inset 0 0 10px 2px hsl(255, 80%, 52%);
   -webkit-animation: glow 2s infinite ease-in-out;
   animation: glow 2s infinite ease-in-out;
 }
 
 @-webkit-keyframes glow {
   0% {
-    box-shadow: 0 0 15px 2px #5423e7, inset 0 0 10px 2px #5423e7;
+    box-shadow: 0 0 15px 2px hsl(255, 80%, 52%), inset 0 0 10px 2px hsl(255, 80%, 52%);
   }
   50% {
-    box-shadow: 0 0 15px 5px #5423e7, inset 0 0 10px 2px #5423e7;
+    box-shadow: 0 0 15px 5px hsl(255, 80%, 52%), inset 0 0 10px 2px hsl(255, 80%, 52%);
   }
   100% {
-    box-shadow: 0 0 15px 2px #5423e7, inset 0 0 10px 2px #5423e7;
+    box-shadow: 0 0 15px 2px hsl(255, 80%, 52%), inset 0 0 10px 2px hsl(255, 80%, 52%);
   }
 }
 @keyframes glow {
   0% {
-    box-shadow: 0 0 15px 2px #5423e7, inset 0 0 10px 2px #5423e7;
+    box-shadow: 0 0 15px 2px hsl(255, 80%, 52%), inset 0 0 10px 2px hsl(255, 80%, 52%);
   }
   50% {
-    box-shadow: 0 0 15px 5px #5423e7, inset 0 0 10px 2px #5423e7;
+    box-shadow: 0 0 15px 5px hsl(255, 80%, 52%), inset 0 0 10px 2px hsl(255, 80%, 52%);
   }
   100% {
-    box-shadow: 0 0 15px 2px #5423e7, inset 0 0 10px 2px #5423e7;
+    box-shadow: 0 0 15px 2px hsl(255, 80%, 52%), inset 0 0 10px 2px hsl(255, 80%, 52%);
   }
 }
 .testimonial-card {
@@ -599,7 +599,7 @@ td > a:hover {
   width: 100%;
   -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
   clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
-  background-color: rgba(84, 35, 231, 0.3);
+  background-color: hsla(255, 80%, 52%, 0.3);
   transform: translateX(-100%);
   z-index: -10;
   transition: transform 500ms ease-in-out;
@@ -608,7 +608,7 @@ td > a:hover {
 #top-button {
   right: 2em;
   bottom: 2em;
-  background: #2354e7;
+  background: hsl(225, 80%, 52%);
   width: 3.5em;
   border-radius: 50%;
   display: grid;
@@ -636,6 +636,11 @@ td > a:hover {
 }
 #top-button .tooltip {
   color: white;
+}
+
+#bmc-wbtn {
+  right: 2.5em !important;
+  bottom: 2.5em !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
