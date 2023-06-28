@@ -1,15 +1,18 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nishant Aanjaney Jalan | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/theme.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/jpg" href="./assets/favicon.jpg" />
+
+    <base href=".">
 
     <meta name="description"
         content="I'm Nishant Aanjaney Jalan. An aspiring Full Stack Developer and experienced Android Developer based in India">
@@ -24,431 +27,66 @@
     <meta property="og:image" content="https://cybercoder-naj.github.io/assets/nishant.png">
     <meta property="og:url" content="https://cybercoder-naj.github.io">
     <meta property="og:type" content="website">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 </head>
 
-<body class="text-white bg-dark">
-    <!-- <div id="top-button" class="position-fixed">
-        <a href="#" title="Scroll to top"><i class="fa fa-arrow-up fa-2x"></i></a>
-    </div> -->
-    <nav class="navbar navbar-expand-md navbar-dark align-items-center fixed-top">
-        <a href="#" class="navbar-brand pt-1">
-            <h1 class="long-brand mb-0">Nishant Aanjaney Jalan</h1>
-        </a>
-
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <div class="nav-btn pt-1">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
+<body>
+    <header>
+        <nav class="navbar p-4">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white d-flex align-items-center" href="#">
+                    Nishant Aanjaney Jalan
+                </a>
+                <ul class="nav justify-content-end align-self-center">
+                    <li class="nav-item">
+                        <a class="nav-link px-0 mx-3" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 mx-3" href="#">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 mx-3" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 mx-3" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 mx-3" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </button>
+        </nav>
+    </header>
 
-        <div class="collapse navbar-collapse justify-content-md-end" id="collapsibleNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#tutoring" class="nav-link">Tutoring</a></li>
-                <li class="nav-item"><a href="#articles" class="nav-link">Articles</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                <li class="nav-item" id="li-contact"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <section id="header" class="row align-items-start">
-        <img src="assets/nishant.png" alt="Nishant Aanjaney Jalan" class="col-12 col-md-6 pr-0 mt-md-5">
-        <div id="main-text" class="container-fluid col-md-6 pr-3 mt-md-4 mt-lg-5 ml-md-0">
-            <h1 class="col-12 pt-5 mb-0 font-weight-bold">I'm Nishant Aanjaney Jalan. An Aspiring Full Stack
-                developer<br><span class="text-muted">based in India.</span></h1>
-            <p class="text-white col-12 pb-4">
-                Starting as a little boy questioning the capabilities of Java, I searched YouTube for the
-                answer and that's when the developer in me awoke. I began my journey as an Android Application
-                Developer,
-                and now on the road to become a Full Stack developer. I specialize in Kotlin, and Javascript and make
-                amazing applications with various frameworks.
-            </p>
-        </div>
-    </section>
-    <main>
-        <section id="experience" class="my-3 py-3 pt-md-4">
-            <div class="container-fluid my-3" style="max-width: 1300px;">
-                <div class="row mx-sm-2">
-                    <p class="text-muted mb-1 font-weight-bold col-12">WORK EXPERIENCE</p>
-                </div>
-                <div class="row mx-sm-2">
-                    <h2 class="text-white font-weight-bold col-12">Companies I have worked for in the past.</h2>
-                </div>
-                <div class="row mx-sm-2 my-2">
-                    <div class="work-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
-                        <h4 class="font-weight-bold"><span class="text-blue">LearnApp</span>, Software Engineering
-                            Intern</h4>
-                        <p class="h6">Developing components for an EdTech Android application for learning Finances and
-                            Stocks.</p>
-                    </div>
-                    <div class="work-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
-                        <h4 class="font-weight-bold"><span class="text-pink">Schoolhouse.world</span>, CS and Math Tutor
-                        </h4>
-                        <p class="h6">Hosting sessions on teaching Computer Science and Mathemathics, helping learners
-                            across the world.</p>
-                    </div>
-                    <!-- <div class="work-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
-                        <h4 class="font-weight-bold"><span class="text-blue">ALMINDS Pvt Ltd</span>, Junior Android
-                            Developer
-                        </h4>
-                        <p class="h6">My first full-time job in an IT company in Kolkata. I am working on a banking
-                            application
-                        </p>
-                    </div> -->
-                    <div class="work-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
-                        <h4 class="font-weight-bold"><span class="text-green">DoubtConnect</span>, Full Stack Intern
-                        </h4>
-                        <p class="h6">An Internship program in a Mumbai-based startup aimed to help students solve
-                            doubts quickly.
-                        </p>
-                    </div>
-                    <!-- <div class="work-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
-                        <h4 class="font-weight-bold"><span class="text-green">CodeTheUniverse</span>, Head Java Teacher
-                        </h4>
-                        <p class="h6">I taught the basics of Java to students across the world on Discord.
-                        </p>
-                    </div> -->
-                    <!-- <div class="work-card col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
-                        <h4 class="font-weight-bold"><span class="text-green">The EduGreen Initiative</span>, Freelance
-                        </h4>
-                        <p class="h6">One of my major projects was to develop an application for a student-led NGO.
-                        </p>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="container-fluid my-5 py-3 target-white" style="max-width: 1300px;">
-            <div class="row px-0 px-md-4">
-                <div class="col-12 col-lg-4 mt-lg-3">
-                    <h1 class="font-weight-bold">Skills</h1>
-                    <p class="text-muted">With over 7 years of experience in programming, I am the perfect person to
-                        strike up interesting conversations and heated debates. Whatever your needs are, I can pretty
-                        much take on
-                        any challenge.</p>
-                </div>
-                <div class="col-12 my-3 col-md-6 col-lg-4 skill-card" data-aos="flip-right" data-aos-duration="1000">
-                    <img src="./assets/app.svg" alt="android" class="my-2">
-                    <h3 class="font-weight-bold">Android Application Developer</h3>
-                    <p class="text-muted">
-                        I have learnt alot from the internet and social media over the past 4 years and built some
-                        amazing apps.
-                    </p>
-                </div>
-                <div class="col-12 my-3 col-md-6 col-lg-4 skill-card" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="./assets/web.svg" alt="full stack" class="my-2">
-                    <h3 class="font-weight-bold">Full Stack Web Developer</h3>
-                    <p class="text-muted">
-                        A recently developed skill: I am learning the in's and out's of anything and everything there is
-                        to know about websites and Javascript frameworks.
-                    </p>
-                </div>
-            </div>
-            <div class="row px-0 px-md-4">
-                <div class="col-12 my-3 col-md-6 col-lg-4 offset-lg-4 skill-card" data-aos="flip-right"
-                    data-aos-duration="1000">
-                    <img src="./assets/music.svg" alt="musician" class="my-2">
-                    <h3 class="font-weight-bold">Musician</h3>
-                    <p class="text-muted">
-                        The best way to cool one's mind is to play some music. I play the keyboard for about 11 years
-                        now. Check out my <a href="https://www.youtube.com/channel/UCPoU-LKr3XG0IujgCFFt4_A">YouTube
-                            Channel</a>.
-                    </p>
-                </div>
-                <div class="col-12 my-3 col-md-6 col-lg-4 skill-card" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="./assets/teacher.svg" alt="teacher mentor" class="my-2">
-                    <h3 class="font-weight-bold">Teacher</h3>
-                    <p class="text-muted">
-                        Can any skill be truly harnessed if you can't teach it to someone? Living by my own
-                        philosophies, teaching is one of my greatest skill.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section id="tutoring" class="container-fluid px-0">
-            <div class="row mx-auto" style="max-width: 1300px;">
-                <div class="col-sm-12 col-md-6 px-0 py-5" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="./assets/schoolhouse.png" alt="Schoolhouse.world SHW" class="rounded mx-auto d-block">
-                </div>
-                <div class="col-sm-12 col-md-6 py-5 d-flex flex-column justify-content-between" data-aos="fade-left"
-                    data-aos-duration="1000">
-                    <div class="mb-0">
-                        <h3 class="font-weight-bold text-primary">My Tutoring</h3>
-                        <p class="text-black mt-5 mb-sm-5 mb-md-0">
-                            Starting in December 2021, I embarked on a journey I consider the closest to me.
-                            For a long time, I have always had to passion to impart knowledge to others and what is
-                            better than tutoring online for free?
-                            View my Profile to get a glimpse of my tutoring endeavours.
-                        </p>
-                    </div>
-                    <div class="mt-5 mt-md-0">
-                        <div class="position-relative">
-                            <a href="https://schoolhouse.world/u/50780" class="text-uppercase position-absolute"
-                                target="_blank">
-                                <span class="line-1 position-absolute"></span>
-                                <span class="line-2 position-absolute"></span>
-                                <span class="line-3 position-absolute"></span>
-                                <span class="line-4 position-absolute"></span>
-                                <span class="line-5 position-absolute"></span>
-                                <span class="line-6 position-absolute"></span>
-                                <span class="line-7 position-absolute"></span>
-                                <span class="line-8 position-absolute"></span>
-                                <span class="link-text mx-2 my-3 h5">Show Profile</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="articles" class="container-fluid my-3 py-3" style="max-width: 1300px;">
-            <div class="row px-0 px-md-4">
-                <div class="col-12 col-md-6">
-                    <p class="text-muted text-uppercase mb-1 font-weight-bold mt-md-5">My Articles</p>
-                    <h2 class="font-weight-bold mb-md-5">My most recent articles I've written on Medium</h2>
+    <main class="my-5">
+        <section id="about-me">
+            <div class="row">
+                <div class="col-6 position-relative"><img src="assets/favicon.jpg" alt="Nishant Aanjaney Jalan" class="position-absolute end-0 me-5"></div>
+                <div class="col-6">
+                    <h4 class="text-white-50 m-0 mt-4">Full Stack Developer</h4>
+                    <h1 class="text-white my-2">Nishant Aanjaney Jalan</h1>
+                    <p id="about-me-desc" class="text-white my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ea pariatur odit id eveniet alias sapiente reprehenderit possimus nam magnam dolor, quis voluptatibus quisquam eaque qui ab sequi accusamus a!</p>
 
-                    <div class="article-card my-4" data-aos="zoom-out-right" data-aos-duration="1000">
+                    <div class="d-flex mb-4">
+                        <button id="btn-cv" class="me-2">Download CV</button>
+                        <button id="btn-contact" class="ms-2">Contact</button>
                     </div>
-                    <div class="article-card my-4" data-aos="zoom-out-right" data-aos-duration="1000">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="article-card my-4" data-aos="zoom-out-left" data-aos-duration="1000">
-                    </div>
-                    <div class="article-card my-4" data-aos="zoom-out-left" data-aos-duration="1000">
-                    </div>
-                    <div id="btnProjects" class="font-weight-bold mt-5 pt-4" data-aos="zoom-out-left"
-                        data-aos-duration="1000">
-                        <a href="https://www.medium.com/@cybercoder.naj"
-                            class="text-uppercase position-relative glow fancy" target="_blank">View all Articles</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="container-fluid my-3 py-3" style="max-width: 1300px;">
-            <div class="row px-0 px-md-4">
-                <div class="col-12 col-md-6">
-                    <p class="text-muted text-uppercase mb-1 font-weight-bold mt-md-5">My Projects</p>
-                    <h2 class="font-weight-bold mb-md-5">Work that I've done for the past 7 years</h2>
-
-                    <div class="project-card my-4" data-aos="zoom-out-right" data-aos-duration="1000">
-                        <img src="./assets/complex-calculator.png" alt="ComplexCalculator">
-                        <h3 class="font-weight-bold p-3">Complex Calculator</h3>
-                        <p class="text-muted px-3 pb-3">
-                            Complex Calculator is a program used to enter mathematical operations in string and it will
-                            compute the data and return the evaluted answer. This is particularly helpful while
-                            developing Android Calculator Apps or Graphing.
-                        </p>
-                        <button class="m-3 py-2 px-3" data-url="https://github.com/cybercoder-naj/ComplexCalculator">
-                            View Source
-                        </button>
-                    </div>
-                    <div class="project-card my-4" data-aos="zoom-out-right" data-aos-duration="1000">
-                        <img src="./assets/x20.png" alt="X-Uberance '20">
-                        <h3 class="font-weight-bold p-3">X-Uberance '20</h3>
-                        <p class="text-muted px-3 pb-3">
-                            Android Application build with Kotlin and Firebase for my high school's annual fest:
-                            X-Uberance 2020. The application is available on Google Play Store
-                        </p>
-                        <button class="m-3 py-2 px-3" data-url="https://github.com/cybercoder-naj/Xuberance2020">
-                            View Source
-                        </button>
-                        <button class="m-3 py-2 px-3"
-                            data-url="https://play.google.com/store/apps/details?id=com.sxcs.xuberance2020">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="project-card my-4" data-aos="zoom-out-left" data-aos-duration="1000">
-                        <img src="./assets/rest_countries.png" alt="REST Countries">
-                        <h3 class="font-weight-bold p-3">REST Countries</h3>
-                        <p class="text-muted px-3 pb-3">
-                            I built this website as a tutorial to teach on Schoolhouse.world
-                        </p>
-                        <button class="m-3 py-2 px-3" data-url="https://github.com/cybercoder-naj/countries">
-                            View Source
-                        </button>
-                        <button class="m-3 py-2 px-3" data-url="https://nuxt-countries.herokuapp.com/">
-                            View Final
-                        </button>
-                    </div>
-                    <div class="project-card my-4" data-aos="zoom-out-left" data-aos-duration="1000">
-                        <img src="./assets/waclone.png" alt="WhatsApp Clone">
-                        <h3 class="font-weight-bold p-3">WhatsApp Clone</h3>
-                        <p class="text-muted px-3 pb-3">
-                            One of the most exciting projects I have worked on in Android is creating a clone of
-                            whatsapp. I used Firebase Firestore to store the data and chats and realtime listen for
-                            changes in the database.
-                        </p>
-                        <button class="m-3 py-2 px-3" data-url="https://github.com/cybercoder-naj/WhatsAppClone">
-                            View Source
-                        </button>
-                    </div>
-                    <div id="btnProjects" class="font-weight-bold mt-5 pt-4" data-aos="zoom-out-left"
-                        data-aos-duration="1000">
-                        <a href="https://github.com/cybercoder-naj?tab=repositories"
-                            class="text-uppercase position-relative glow fancy" target="_blank">View all Projects</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="testimonials" class="container-fluid my-3 py-3" style="max-width: 1300px;">
-            <div class="row px-0 px-md-4">
-                <div class="col-12 col-md-6">
-                    <h2 class="font-weight-bold mt-md-4">This is what people say about me</h2>
-                    <p class="text-muted mb-md-4">Here are a few lines from people who I have worked with over the past
-                        2 years in my programming career.</p>
-
-                    <div class="testimonial-card my-5 p-4" data-aos="zoom-in-up" data-aos-duration="1000">
-                        <h6 class="text-italic mb-4 font-weight-bold">
-                            "Nishant made an app for our flagship interschool event called X-UBERANCE. Not only was he
-                            well versed with his material about what he could make in a short span of time, but he also
-                            left space for creative thinking and successfully made a well-rounded application. He met
-                            all deadlines on time and it was a pleasure to work with him."
-                        </h6>
-                        <p class="text-muted font-weight-bold mb-0">Vatsal Agarwal</p>
-                        <p class="text-muted">Convener, X-Uberance 2019</p>
-
-                        <span></span><span></span><span></span><span></span>
-                    </div>
-                    <div class="testimonial-card my-5 p-4" id="learnapp-testimonial" data-aos="zoom-in-up" data-aos-duration="1000">
-                        <h6 class="text-italic mb-4 font-weight-bold">
-                            During the internship, with self-motivation, Nishant
-                            demonstrated a keen interest and enthusiasm to learn new skills. His performance exceeded
-                            our
-                            expectations and his dedication to their role and responsibilities was commendable. All of
-                            the
-                            tasks were completed on time and to the best of his abilities.<br><br>
-                            Nishant has a bright and creative future in front of him. As a former student of
-                            Engineering, I
-                            understand the rigour and discipline it takes to succeed in such a program. I am confident
-                            that he
-                            will attend the highest accolade in any pursuit that he chooses. I highly recommend Nishant
-                            and
-                            wish him the best in his future endeavours.
-                        </h6>
-                        <p class="text-muted font-weight-bold mb-0">Sohail Alam</p>
-                        <p class="text-muted">Chief Technology Officer, LearnApp Technologies Pvt. Ltd.</p>
-
-                        <span></span><span></span><span></span><span></span>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="testimonial-card mb-2 p-4" data-aos="zoom-in-up" data-aos-duration="1000">
-                        <h6 class="text-italic mb-4 font-weight-bold">
-                            "Nishant is unequivocally one of the best team members I've worked with. He has an amazing
-                            curiousity and adapts quickly to situations. His performance at my former nonprofit was
-                            exceeding all other team members, including other executives."
-                        </h6>
-                        <p class="text-muted font-weight-bold mb-0">Aditya Diwakar</p>
-                        <p class="text-muted">President, CodeTheUniverse</p>
-
-                        <span></span><span></span><span></span><span></span>
-                    </div>
-                    <div class="testimonial-card mb-2 p-4" data-aos="zoom-in-up" data-aos-duration="1000">
-                        <h6 class="text-italic mb-4 font-weight-bold">
-                            "Excellent depth of knowledge and the desire of exploration in the given field, Gives him
-                            the edge to have knowledge on both Web and Android platform. Sky's the limit and he proves
-                            it"
-                        </h6>
-                        <p class="text-muted font-weight-bold mb-0">Trishi Raj</p>
-                        <p class="text-muted">Chief Technology Officer, DoubtConnect</p>
-
-                        <span></span><span></span><span></span><span></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="container-fluid my-3 py-3" style="max-width: 1300px;">
-            <div class="row px-0 px-md-4">
-                <div class="col-12 d-flex flex-column align-items-start col-md-6">
-                    <h2 class="font-weight-bold">Let's talk business</h2>
-                    <p class="text-muted">Now that you know a lot about me, let me know if you are interested to work
-                        with me</p>
-                    <a href="./assets/nishant-resume.pdf" download
-                        class="my-4 text-center align-self-center btn btn-primary">Download my resume here!</a>
-                </div>
-                <div class="col-12 col-md-6">
-                    <form data-aos="fade-down" data-aos-duration="1000">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="5" class="d-block"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary mt-2 py-3 text-uppercase">Let's get
-                            started</button>
-                    </form>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="container-fluid py-3">
-        <div class="row px-0 px-md-4">
-            <div class="col-12 col-md-6">
-                <h1 class="h3">Nishant Aanjaney Jalan</h1>
-                <a href="https://github.com/cybercoder-naj" class="ic-github"><i
-                        class="icon fa fa-github fa-lg mx-1"></i></a>
-                <a href="https://www.linkedin.com/in/nishant-a-jalan" class="ic-linkedin"><i
-                        class="icon fa fa-linkedin fa-lg mx-1"></i></a>
-                <a href="https://t.me/cybercoder.naj" class="ic-telegram"><i
-                        class="icon fa fa-telegram fa-lg mx-1"></i></a>
-            </div>
-            <div class="col-12 col-md-6">
-                <table class="table table-borderless mt-3">
-                    <tbody>
-                        <tr>
-                            <td><a href="#">Home</a></td>
-                            <td><a href="#experience">Experience</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#skills">Skills</a></td>
-                            <td><a href="#tutoring">Tutoring</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#projects">Projects</a></td>
-                            <td><a href="#testimonials">Testimonials</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#contact" colspan="2">Contact</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row px-0 px-md-4">
-            <div class="col-12 text-muted">
-                Created by <a href="https://github.com/cybercoder-naj/cybercoder-naj.github.io/"><i
-                        class="fa fa-heart"></i> Nishant Aanjaney Jalan</a><br>Designed by <a
-                    href="https://www.instagram.com/grafickgal"><i class="fa fa-instagram"></i> grafickgal</a>
-            </div>
-        </div>
-    </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="scripts/main.js" type="module"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="cybercoder.naj" data-description="Support me on Buy me a coffee!" data-message="Love what I do? Support me by buying me a coffee!" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="cybercoder.naj" data-description="Support me on Buy me a coffee!"
+        data-message="Love what I do? Support me by buying me a coffee!" data-color="#BD5FFF" data-position="Right"
+        data-x_margin="18" data-y_margin="18"></script> -->
 </body>
 
 </html>
