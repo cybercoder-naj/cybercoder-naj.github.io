@@ -52,12 +52,14 @@ main, section {
 }
 
 #about-me {
-  img {
+  padding: 0 4rem;
+
+  #my-photo {
     height: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
     border: .5em solid grey;
-    box-shadow: 0 0 5px 0 black;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,.8);
 
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -90,5 +92,54 @@ main, section {
         color: black;
       }
     }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+
+    .grid-item {
+      display: flex;
+      align-items: flex-start;
+
+      .skill-img {
+        margin: 1em;
+        width: 32px;
+        height: 32px;
+      }
+
+      .skill-header {
+        margin-top: .4em;
+      }
+    }
+  }
+}
+
+h4.section-heading {
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 8px;
+  font-weight: bold;
+
+  &::before, &::after {
+    content: '';
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    background-color: var(--my-grey);
+    width: 100%;
+  }
+
+  &::after {
+    background-color: var(--my-blue);
+    width: 25%;
   }
 }

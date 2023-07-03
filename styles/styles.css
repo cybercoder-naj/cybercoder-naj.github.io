@@ -32,12 +32,15 @@ main, section {
   width: 100%;
 }
 
-#about-me img {
+#about-me {
+  padding: 0 4rem;
+}
+#about-me #my-photo {
   height: 100%;
   aspect-ratio: 1;
   border-radius: 50%;
   border: 0.5em solid grey;
-  box-shadow: 0 0 5px 0 black;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.8);
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
@@ -63,6 +66,48 @@ main, section {
 #about-me button#btn-contact:hover {
   background-color: white;
   color: black;
+}
+#about-me .grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+}
+#about-me .grid-container .grid-item {
+  display: flex;
+  align-items: flex-start;
+}
+#about-me .grid-container .grid-item .skill-img {
+  margin: 1em;
+  width: 32px;
+  height: 32px;
+}
+#about-me .grid-container .grid-item .skill-header {
+  margin-top: 0.4em;
+}
+
+h4.section-heading {
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+h4.section-heading::before, h4.section-heading::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+h4.section-heading::before {
+  background-color: var(--my-grey);
+  width: 100%;
+}
+h4.section-heading::after {
+  background-color: var(--my-blue);
+  width: 25%;
 }
 
 /*# sourceMappingURL=styles.css.map */
