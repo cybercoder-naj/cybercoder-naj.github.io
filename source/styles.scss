@@ -32,6 +32,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  color: white;
 }
 
 .navbar-brand {
@@ -47,7 +48,8 @@ body {
   }
 }
 
-main, section {
+main,
+section {
   width: 100%;
 }
 
@@ -59,7 +61,7 @@ main, section {
     aspect-ratio: 1;
     border-radius: 50%;
     border: .5em solid grey;
-    box-shadow: 0 0 25px 0 rgba(0,0,0,.8);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, .8);
 
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -75,7 +77,7 @@ main, section {
     background-color: var(--bg-color);
     border-radius: 2em;
     transition: color 200ms ease-in-out 50ms,
-            background-color 200ms ease-in-out 50ms;
+      background-color 200ms ease-in-out 50ms;
 
     &#btn-cv {
       border: 2px solid var(--my-blue);
@@ -87,6 +89,7 @@ main, section {
 
     &#btn-contact {
       border: 2px solid white;
+
       &:hover {
         background-color: white;
         color: black;
@@ -116,10 +119,51 @@ main, section {
     }
   }
 
-  #testimonials-carousel {
+  #testimonial-carousel {
+    display: flex;
+    align-items: stretch;
+    overflow-y: visible;
+    overflow-x: hidden;
 
+    .testimonial-card {
+      min-width: calc(50% - 6em);     
+      margin: 0 3em;
+      position: relative;
+      z-index: 10;
+      background-color: #282828;
+      border: 1px solid #444444;
+      border-radius: 1em;
+      padding: 2em 1.75em;
+      transform: translateX(-800px);
+
+      .testimonial-inner {
+        display: flex;
+
+        .testimonial-text {
+          font-style: italic;
+        }
+
+        img {
+          align-self: flex-end;
+          margin-bottom: 2em;
+          margin-right: 1.75em;
+        }
+      }
+    }
+
+    img[src^="assets/quote"] {
+      width: 42px;
+      height: 42px;
+    }
+
+    img[src^="assets/quote-right"] {
+      position: absolute;
+      right: -3%;
+      bottom: -10%;
+    }
   }
 }
+
 
 h4.section-heading {
   color: white;
@@ -128,7 +172,8 @@ h4.section-heading {
   padding-bottom: 8px;
   font-weight: bold;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     content: '';
     height: 2px;
     position: absolute;
