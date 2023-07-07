@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Nishant Aanjaney Jalan | Portfolio',
     siteName: 'Nishant Aanjaney Jalan | Portfolio',
     description: 'I\'m Nishant Aanjaney Jalan. An aspiring Full Stack Developer and experienced Android Developer based in India and UK',
-    images: [{ url: 'https://cybercoder-naj.github.io/assets/nishant.png'}],
+    images: [{ url: 'https://cybercoder-naj.github.io/assets/nishant.png' }],
     url: 'https://cybercoder-naj.github.io',
     type: 'website'
   }

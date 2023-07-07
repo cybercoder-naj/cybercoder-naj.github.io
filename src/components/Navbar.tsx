@@ -16,8 +16,7 @@ export default function Navbar() {
         <span className="sm:hidden">
             <FontAwesomeIcon icon={faBars} className="w-5"/>
         </span>
-        <ul className="absolute sm:static -right-full bg-nero w-screen pl-10 text-nav-unselected
-            sm:flex sm:w-auto text-sm">
+        <ul className="absolute sm:static -right-full bg-nero w-screen pl-10 text-nav-unselected sm:flex sm:w-auto text-sm">
             <li className="my-4 sm:my-1 sm:mx-3 hover:text-nav-selected transition duration-300 ease-in-out text-nav-selected"><Link href="about-me">About Me</Link></li>
             <li className="my-4 sm:my-1 sm:mx-3 hover:text-nav-selected transition duration-300 ease-in-out"><Link href="resume">Resume</Link></li>
             <li className="my-4 sm:my-1 sm:mx-3 hover:text-nav-selected transition duration-300 ease-in-out"><Link href="portfolio">Portfolio</Link></li>
