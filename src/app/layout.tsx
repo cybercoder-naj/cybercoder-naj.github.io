@@ -1,7 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Navbar from '../components/Navbar'
+import Navbar from '@/components/Navbar'
+import { GlobalContextProvider } from './Context/store'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,9 +37,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-nero text-white`}>
-        <Navbar />
-        {children}
+      <body className={`${inter.className} bg-nero text-white overflow-x-hidden`}>
+        <GlobalContextProvider>
+          <Navbar />
+          {children}
+        </GlobalContextProvider>
       </body>
     </html>
   )

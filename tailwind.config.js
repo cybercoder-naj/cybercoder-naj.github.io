@@ -13,7 +13,14 @@ module.exports = {
         'nav-selected': '#e8e8e8'
       },
       inset: {
-        '-full': '-100%'
+        '-full': '-100%',
+        '-1/20': '-5%'
+      },
+      borderWidth: {
+        '10': '18px'
+      },
+      boxShadow: {
+        'img-bg': '0 0 25px 0 rgba(0,0,0,.8)'
       }
     },
   },
