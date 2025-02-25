@@ -20,6 +20,15 @@ body {
   counter-reset: work-card;
 }
 
+.deprecation-notice {
+  background-color: yellow;
+  color: black;
+  width: 100%;
+  margin: 0rem 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
 nav {
   transition: background-color 150ms ease-in-out;
 }
@@ -299,7 +308,7 @@ nav .navbar-brand .long-brand {
 }
 
 #tutoring {
-  background-color: #ffc8c5;
+  background-color: rgb(255, 200.1926605505, 197);
 }
 #tutoring img {
   width: 80%;
